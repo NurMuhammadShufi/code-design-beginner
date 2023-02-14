@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #ecf8ff;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: 5px 10px 8px rgba(136, 136, 136, 0.4);
+  border: transparent;
+  border-radius: 15px;
+  padding: 1rem;
+  width: 37rem;
+  margin: 14.39rem auto;
+  transition: all ease 1s;
+}
+
+.container:hover {
+  transform: scale(1.1);
+}
+
+/* btn dark */
+.btn-dark {
+  background-color: #141d26;
+  height: auto;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 15px;
+}
+
+.btn-dark button {
+  background: none;
+  border: none;
+}
+
+.btn-dark button i {
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+/* end btn dark */
+
+/* Dark mode */
+.dark-mode {
+  background-color: #141d26;
+  transition: all ease 0.5s;
+}
+
+.dark-mode-btn {
+  color: #243447;
+}
+
+.dark-mode-container {
+  background-color: #243447;
+  color: #fff;
+  transition: all ease 0.5s;
+}
+
+/* end Dark mode */
+
+/* Header */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem auto;
+}
+
+.header .avatar-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+.header .avatar-details img {
+  width: 3.125rem;
+  height: 3.125rem;
+  margin-right: 1rem;
+}
+
+.header .avatar-details .avatar-name h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.header .avatar-details .avatar-name p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.header .twitter-logo {
+  padding: 0 0.5rem;
+}
+
+.header .twitter-logo img {
+  width: 2rem;
+  height: 2rem;
+}
+/* End Header */
+
+/* Caption */
+.caption {
+  width: 100%;
+  margin: 0.8rem auto;
+}
+
+.caption .caption-details {
+  padding: 0 0.5rem;
+}
+
+.caption p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+.caption p span {
+  color: #1da1f2;
+}
+/* End Caption */
+
+/* Footer */
+.footer {
+  width: 100%;
+  margin: 0.8rem auto;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-logo {
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.footer .footer-logo i {
+  margin-right: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.footer .footer-logo p {
+  color: #ffffff transparent(0.3);
+}
+
+.footer .footer-detail p {
+  color: #ffffff transparent(0.3);
+}
+/* End Footer */
+
+/* Copyright */
+.copyright {
+  width: 100%;
+  background-color: #1da1f2;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  color: #fff;
+}
+
+.copyright p {
+  position: relative;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+.copyright p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media Screen */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  container {
+    margin: 15rem auto;
+  }
+  .header .avatar-details {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .header .avatar-details img {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .header .avatar-details .avatar-name h2 {
+    font-size: 1rem;
+  }
+
+  .header .avatar-details .avatar-name p {
+    font-size: 0.8rem;
+  }
+
+  .header .twitter-logo img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+/* Media Screen */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .header .avatar-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .avatar-details img {
+    margin-right: 0;
+  }
+
+  .header .avatar-details .avatar-name h2 {
+    margin-top: 0.5rem;
+  }
+
+  .caption {
+    margin-top: 1rem;
+  }
+}
